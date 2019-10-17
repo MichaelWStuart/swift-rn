@@ -1,0 +1,28 @@
+target 'in' do
+  use_frameworks!
+
+ pod 'React-Core', :path => '../rn/node_modules/react-native'
+ pod 'React-cxxreact', :path => '../rn/node_modules/react-native/ReactCommon/cxxreact'
+ pod 'React-jsinspector', :path => '../rn/node_modules/react-native/ReactCommon/jsinspector'
+ pod 'React-jsi', :path => '../rn/node_modules/react-native/ReactCommon/jsi'
+ pod 'React-jsiexecutor', :path => '../rn/node_modules/react-native/ReactCommon/jsiexecutor'
+ pod 'React-RCTNetwork', :path => '../rn/node_modules/react-native/Libraries/Network'
+ pod 'React-RCTText', :path => '../rn/node_modules/react-native/Libraries/Text'
+ pod 'React-RCTImage', :path => '../rn/node_modules/react-native/Libraries/Image'
+
+ # required for > RN v0.61
+ pod 'React-CoreModules', :path => '../rn/node_modules/react-native/React/CoreModules'
+ pod 'FBLazyVector', :path => '../rn/node_modules/react-native/Libraries/FBLazyVector'
+ pod 'FBReactNativeSpec', :path => '../rn/node_modules/react-native/Libraries/FBReactNativeSpec'
+ pod 'RCTRequired', :path => '../rn/node_modules/react-native/Libraries/RCTRequired'
+ pod 'RCTTypeSafety', :path => '../rn/node_modules/react-native/Libraries/TypeSafety'
+ pod 'ReactCommon/turbomodule/core', :path => '../rn/node_modules/react-native/ReactCommon'
+
+ # Explicitly include Yoga if you are using RN >= 0.42.0
+ pod 'Yoga', :path => '../rn/node_modules/react-native/ReactCommon/yoga'
+
+ # Third party deps podspec link
+ pod 'DoubleConversion', :podspec => '../rn/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+ pod 'glog', :podspec => '../rn/node_modules/react-native/third-party-podspecs/glog.podspec'
+ pod 'Folly', :podspec => '../rn/node_modules/react-native/third-party-podspecs/Folly.podspec'
+end
