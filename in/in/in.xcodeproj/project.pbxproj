@@ -22,6 +22,7 @@
 		21C4CA5AC01084CC6B9AD56E /* Pods-in.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-in.release.xcconfig"; path = "Target Support Files/Pods-in/Pods-in.release.xcconfig"; sourceTree = "<group>"; };
 		2D3DFED1445052AB0BDA9F92 /* Pods_in.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_in.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		428000AA838724531011B1FF /* Pods-in.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-in.debug.xcconfig"; path = "Target Support Files/Pods-in/Pods-in.debug.xcconfig"; sourceTree = "<group>"; };
+		F4319B822358FA210099E486 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F439F8DC2349722500E897BA /* in.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = in.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F439F8DF2349722500E897BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F439F8E12349722500E897BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F4FEBB43235860E5000708FD /* Foo.swift */,
+				F4319B822358FA210099E486 /* Bridging-Header.h */,
 				F4FEBB452358610C000708FD /* FooBridge.m */,
 				F439F8DF2349722500E897BA /* AppDelegate.swift */,
 				F439F8E12349722500E897BA /* ViewController.swift */,
@@ -371,7 +373,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Modus.in;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "in/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,7 +392,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Modus.in;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "in/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

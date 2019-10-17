@@ -10,7 +10,10 @@ import Foundation
 
 @objc(Foo)
 class Foo: NSObject {
-    @objc func doThis() -> Void {
-        print("hello swift!")
+    @objc func test(_ str: String, callback: @escaping RCTResponseSenderBlock) -> Void {
+            print("Arg from react native: \(str)")
+            callback([NSNull(), [
+                "str": str
+                ]])
     }
 }

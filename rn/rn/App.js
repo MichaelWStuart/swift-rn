@@ -10,8 +10,16 @@ import {
 
 const { Foo } = NativeModules;
 
-const onDoThis = () =>
-  Foo.doThis();
+handlePress = () => {
+  let testArg = "bar";
+  Foo.test(testArg, (error, response) => {
+      if (error) {
+        console.log('e', error)
+        return
+      }
+      console.log("Success!", response);
+  });
+}
 
 const App = () => (
   <SafeAreaView style={styles.view}>
@@ -19,7 +27,7 @@ const App = () => (
       <Text style={styles.text}>
         hello react native!
       </Text>
-      <Button title="Click me" onPress={onDoThis}/>
+      <Button title="Click me" onPress={handlePress}/>
     </View>
   </SafeAreaView>
 );
