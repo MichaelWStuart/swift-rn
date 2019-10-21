@@ -11,7 +11,7 @@ import {
 const { Foo } = NativeModules;
 
 handlePress = () => {
-  let testArg = "bar";
+  let testArg = { bartest: "bar" };
   Foo.test(testArg, (error, response) => {
       if (error) {
         console.log('e', error)

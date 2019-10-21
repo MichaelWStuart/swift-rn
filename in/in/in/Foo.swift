@@ -10,10 +10,10 @@ import Foundation
 
 @objc(Foo)
 class Foo: NSObject {
-    @objc func test(_ str: String, callback: @escaping RCTResponseSenderBlock) -> Void {
-            print("Arg from react native: \(str)")
-            callback([NSNull(), [
-                "str": str
-                ]])
+    @objc func test(_ obj: NSDictionary, callback: @escaping RCTResponseSenderBlock) -> Void {
+        guard let dict = obj as? [String: Any] else {
+            return
+        }
+        print("dict", dict)
     }
 }
